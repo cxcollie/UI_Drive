@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>eclipseTest</display-name>
+  
+  <servlet>
+    <servlet-name>obtainDriveInfo</servlet-name>
+    <servlet-class>eclipseTest.obtainDriveInfo</servlet-class>
+  </servlet>
+   
+   <servlet>
+    <servlet-name>newUserRegister</servlet-name>
+    <servlet-class>eclipseTest.newUserRegister</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>passengerConfirmation</servlet-name>
+    <servlet-class>eclipseTest.passengerConfirmation</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>obtainDriveInfo</servlet-name>
+    <url-pattern>/obtainDriveInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>newUserRegister</servlet-name>
+    <url-pattern>/newUserRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>passengerConfirmation</servlet-name>
+    <url-pattern>/passengerConfirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>userCenter</servlet-name>
+    <servlet-class>eclipseTest.userCenter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userCenter</servlet-name>
+    <url-pattern>/userCenter</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>publishDrive</servlet-name>
+    <servlet-class>eclipseTest.publishDrive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>publishDrive</servlet-name>
+    <url-pattern>/publishDrive</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>userLogin</servlet-name>
+    <servlet-class>eclipseTest.userLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userLogin</servlet-name>
+    <url-pattern>/userLogin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>selectDrive</servlet-name>
+    <servlet-class>eclipseTest.selectDrive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectDrive</servlet-name>
+    <url-pattern>/selectDrive</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
